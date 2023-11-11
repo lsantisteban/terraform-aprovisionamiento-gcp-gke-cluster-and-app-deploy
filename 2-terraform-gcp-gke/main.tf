@@ -1,7 +1,7 @@
 resource "google_container_cluster" "primary" {
-  project  = "sandbox-13-252"
-  name     = "sandbox-cluster-v1"
-  location = "us-central1"
+  project  = var.project
+  name     = var.name
+  location = var.location
 
   deletion_protection = false
 
